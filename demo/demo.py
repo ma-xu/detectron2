@@ -110,6 +110,7 @@ if __name__ == "__main__":
             img = read_image(path, format="BGR")
             start_time = time.time()
             predictions, visualized_output = demo.run_on_image(img)
+            print(f"The prediction results are: \n{predictions}")
             logger.info(
                 "{}: {} in {:.2f}s".format(
                     path,
